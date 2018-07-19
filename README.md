@@ -14,4 +14,18 @@ AjaxでAPI通信を使ったお天気アプリ
 
 ## ハマりそうなポイント
 
+- 検索ボタンをクリックしたらJavascriptを実行するところ
+
+```js
+$('#btn-search').click(function (event) {
+    # 処理
+});
+```
+
+- Ajaxで取得したデータにアクセスするところ
+
+```js
+.done((data) # <= このdata 名前はなんでもよい
+```
+
 - 天気のアイコン画像を`https://openweathermap.org/img/w/`にセットして拡張子を`.png`にするところ
