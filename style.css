@@ -1,0 +1,56 @@
+body{
+  font-size: 14pt;
+}
+.container {
+  padding: 20px 0px 20px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 90%;
+  border-radius:4px;
+}
+input{
+  height: 25px;
+}
+h2{
+  text-align: left;
+}
+h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+h4{
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+span{
+  font-size: 25pt;
+}
+.degree-temp{
+  font-size: 18pt;
+  vertical-align: top;
+  position: relative;
+  top: 7px;
+}
+.degree{
+  font-size: 14pt;
+  vertical-align: top;
+  position: relative;
+  top: 7px;
+}
+#temp{
+  font-size:45px;
+}
+img{
+  position: relative;
+  bottom: 7px;
+}
+.bg-default{
+  border: 3px solid #8181F7;
+}
+.bg-success{
+  border: 3px solid #BCF5A9;
+}
+.bg-danger{
+  border: 3px solid #F5A9A9;
+}
