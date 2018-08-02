@@ -1,0 +1,63 @@
+.box {
+  margin: 10px;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  color: #6091d3;
+  background: #fff;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+}
+
+.box2 p {
+  margin: 0;
+  padding: 0;
+}
+
+#PostalCode {
+  position: relative;
+}
+
+.btn {
+  margin-top: 20px;
+  background: yellow;
+  position: absolute;
+  bottom: 5px;
+  right: -40px;
+  height: 100%;
+}
+
+.centerBox {
+  text-align: center;
+}
+
+.InlineBlock {
+  display: inline-block;
+}
+
+.weatherSection {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#input-1 {
+  width: 70%;
+  text-align: center;
+}
+
+.PostalCodeBox {
+  margin: 20px auto;
+}
+
+p {
+  font-weight: bold;
+  color: #6091d3;
+}
+
+.hiddenSection {
+  visibility: hidden;
+}
+
+.alertSection {
+  text-align: center;
+}
