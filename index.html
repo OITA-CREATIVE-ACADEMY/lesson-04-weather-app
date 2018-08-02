@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+
+    <title>weatherMap</title>
+</head>
+
+<body>
+    <div class="row">
+        <!-- ▼ 郵便番号入力フィールド(7桁) -->
+        <section class="title">
+            <div>
+                <input id="zip" class="required" type="text required" value="" placeholder=" 郵便番号を入力">
+                <button type="button" id="searchBtn" class="btn btn-outline-dark">検索</button>
+                <div class="invalid-feedback col-xs-12"> 郵便番号を半角数字でハイフン( - )を入れて入力してください</div>
+            </div>
+        </section>
+
+        <!--天気表示 -->
+        <section class="temperature">
+            <div class="card weatherCard hide" style="width: 18rem;">
+                <div class="card-body">
+                    <img class="card-img-top weatherImg" src="" alt=""> <!--天気アイコン -->
+                    <div class="temperatures">
+                        <div class="temp" id="temp"></div> <!-- 現在気温 -->
+                        <div class="temp-max" type="text" id="temp-max"></div> <!-- 最高気温 -->
+                        <div class="temp-min" type="text" id="temp-min"></div> <!-- 最低気温 -->
+                    </div>
+                </div> <!--card-body -->
+            </div> <!--card weatherCard -->
+
+            <!--住所alert -->
+            <div class="zipCodeNone hide col-xs-12 text-left">該当する住所が見つかりません。</div>
+        </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/weather.js"></script>
+</body>
+
+</html>

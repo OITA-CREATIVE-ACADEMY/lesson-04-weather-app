@@ -1,0 +1,108 @@
+body {
+  margin: 20px 5%;
+}
+
+#zip{
+  width: 75%;
+  height: 40px;
+  font-size: 20px
+}
+
+input::-webkit-input-placeholder {
+  font-size: 15px;
+}
+
+#searchBtn {
+  width: 20%;
+  border : solid 1px #ccc ; 
+  border-radius: 0px;
+  height: 40px;
+  margin-top: -7px;
+}
+
+.weatherCard {
+  width: 200px;
+  font-family: arial black;
+  padding-top: 30px;
+  position: fixed;
+  top: 18%;
+  left: 20%;
+}
+
+.weatherImg {
+  float: left;
+  margin: 0px;
+  }  
+
+.card-body {
+  float: left;
+  width: 200px;
+}
+
+.current_location {
+  color: green;
+  padding-left: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.temperatures {
+  float: left;
+}
+
+#temp {
+  padding: 0px 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.temp-max {
+  font-weight: bold;
+  color: red;
+}
+
+.temp-min {
+  font-weight: bold;
+  color: blue;
+}
+
+.zipCodeNone {
+  padding: 60px 120px;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.invalid-feedback {
+  padding-top: 5px;
+  display: none;
+  color: red;
+}
+
+@media screen and (min-width:100px) { 
+  /*　画面サイズが100pxからはここを読み込む　*/
+    .invalid-feedback {
+      font-size: 12px;
+  }
+    .zipCodeNone {
+      padding: 60px 20px;
+  }
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    .invalid-feedback {
+      font-size: 15px;
+  }
+    .zipCodeNone {
+      padding: 60px 120px;
+  }
+}
+@media screen and (min-width:1024px) {
+  /*　画面サイズが1024pxからはここを読み込む　*/
+    .invalid-feedback {
+      font-size: 18px;
+  }
+    .zipCodeNone {
+      padding: 60px 120px;
+  }
+}
