@@ -1,74 +1,45 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>お天気アプリ</title>
+<html lang="ja">
+ <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+   <title>WeatherApp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header clearfix">
-      <h3 class="text-muted">お天気アプリ</h3>
-    </div>
-    <!-- Search Form -->
-    <div class="jumbotron">
-      <form>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="input-group">
-              <input type="text" class="form-control" id="zipcode" placeholder="郵便番号を入力" value="870-0839" autofocus>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit" id="btn-search">検索</button>
-              </span>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <!-- Result -->
-    <div class="panel panel-primary hidden" id="result">
-      <div class="panel-body text-center">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="h3 text-success">現在の天気</div>
-            <div class="h3">
-              <img src="" id="icon">
-              <span id="temp"></span>
-              ℃
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h4 text-danger">最高気温</div>
-            <div class="h4"><span id="temp-max"></span>℃</div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h4 text-primary">最低気温</div>
-            <div class="h4"><span id="temp-min"></span>℃</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Error -->
-    <div class="panel panel-danger hidden" id="error">
-      <div class="panel-heading">該当する住所が見つかりません</div>
-      <div class="panel-body" id="error-message"></div>
-    </div>
-  </div>
+<h1>Weather Forecast !</h1>
+   <div id="input-address" class="box1">
+    <p>郵便番号を入力するとお天気情報を見ることができます。</p>
+    <form id="form01" action="#">
+　　<input id="input"　type="text" placeholder="郵便番号を入力"　autofocus>
+    <input id="button" type="submit" value="検索">
+    </form>
+   </div>
 
-  <!-- Javascript -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
+<!-- 現在の天気と気温-->
+<div id="content" class="box2">
+    <h3 id="now">現在の天気</P>
+    <div id="icon"></div>
+    <div id="answer-temp"></div>℃
+    <!-- <input type="submit" value="検索" onclick="change();"> -->
+    <br>
+    <!-- 最高気温 -->
+    <h4 id="highest">最高気温</p>
+    <div id="answer-max">℃</div>
+    <brz>
+    <!-- 最低気温 -->
+    <h4 id="owest">最低気温</p>
+    <div id="answer-min">℃</div>
+
+</div>
+
+<div id="fail">
+    だめでーす
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="script.js"></script>
+
+
 </body>
-
 </html>

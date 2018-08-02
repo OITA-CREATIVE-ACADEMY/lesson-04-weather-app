@@ -1,0 +1,45 @@
+body{
+    text-align:center;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+h1{
+  text-align:center;
+  width:auto;
+  text-align : center;
+}
+
+#input-address,#content{
+  text-align:center;
+}
+
+.placeholder{
+    fon-color:
+}
+
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em;
+    color: #2c2c2f;
+    background: #cde4ff;/*背景色*/
+}
+
+.box2 {
+    padding: 0.5em 1em;
+    margin: 2em;
+    border: double 5px #4ec4d3;
+}
+
+
+#now {
+    color: #008000;
+}
+
+#highest {
+    color: #ff0000;
+}
+
+#owest {
+    color: #0000ff;
+}
