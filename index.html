@@ -1,74 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>お天気アプリ　ver.1.0</title>
+    <link href="css/styles.css" rel="stylesheet">
 
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>お天気アプリ</title>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-
-<body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header clearfix">
-      <h3 class="text-muted">お天気アプリ</h3>
-    </div>
-    <!-- Search Form -->
-    <div class="jumbotron">
-      <form>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="input-group">
-              <input type="text" class="form-control" id="zipcode" placeholder="郵便番号を入力" value="870-0839" autofocus>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit" id="btn-search">検索</button>
-              </span>
-            </div>
-          </div>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="main_title">
+          お天気アプリ　ver.1.0
         </div>
-      </form>
-    </div>
-    <!-- Result -->
-    <div class="panel panel-primary hidden" id="result">
-      <div class="panel-body text-center">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="h3 text-success">現在の天気</div>
-            <div class="h3">
-              <img src="" id="icon">
-              <span id="temp"></span>
-              ℃
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h4 text-danger">最高気温</div>
-            <div class="h4"><span id="temp-max"></span>℃</div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h4 text-primary">最低気温</div>
-            <div class="h4"><span id="temp-min"></span>℃</div>
-          </div>
+        <div class="search_field">
+        <input id="zip" class="zip-field" type="text" name="postform" value="" placeholder="郵便番号を入力" style="font-size:18px;">
+        <input id="btn" class="search-btn" type="button" name="" value="検索"  style="font-size:15px;">
         </div>
       </div>
-    </div>
-    <!-- Error -->
-    <div class="panel panel-danger hidden" id="error">
-      <div class="panel-heading">該当する住所が見つかりません</div>
-      <div class="panel-body" id="error-message"></div>
-    </div>
-  </div>
+        <!-- <div class="test">
+          <label for="resultForm">取得した値: </label>
+          <input type="text" id="resultForm">
+        </div> -->
 
-  <!-- Javascript -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
-</body>
+　<!-- このアドレスのアイコンのコード部分だけを書き換える指示をJSで作る -->
+        <!-- <img src="https://openweathermap.org/img/w/50n.png" style="width:200px"> -->
+
+
+
+
+
+      <div id="result-box">
+        <div id="result" class="box">
+          <div class="inner-box">
+            <div class="icon_box">
+              <div id="city"><span id="city_name"></span>-city</div>
+
+              <div id="icon" class="pic"><img id="icons" src="https://openweathermap.org/img/w/50n.png" ></div>
+              <div id="temp_big" class="temp">2</div>
+            </div>
+          <div class="temp-box">
+            <div style="color:red;">最高気温=<span id="max" class="max-temp"></span>℃</div>
+            <div style="color:blue;">最低気温=<span id="min" class="min-temp"></span>℃</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="noMatch" class="disabled">
+        <p id="message" class="missed">該当する住所が見つかりません。</p>
+      </div>
+    </div>
+
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="lib/jquery.main.js"></script>
+  </body>
 
 </html>
