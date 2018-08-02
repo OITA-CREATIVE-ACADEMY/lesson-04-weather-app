@@ -1,74 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>お天気アプリ</title>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="">
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="utf-8" />
+    <title>Wether Map</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 </head>
-
 <body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header clearfix">
-      <h3 class="text-muted">お天気アプリ</h3>
-    </div>
-    <!-- Search Form -->
-    <div class="jumbotron">
-      <form>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="input-group">
-              <input type="text" class="form-control" id="zipcode" placeholder="郵便番号を入力" value="870-0839" autofocus>
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit" id="btn-search">検索</button>
-              </span>
+    <div class="container">
+        <!-- Search Form -->
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="input-group">
+                        <input class="form-control" id="input" type="text" placeholder="住所を入力して下さい" value="865-0008" autofocus>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" id="button" type="button">検索</button>
+                        </span>
+                    </div>
+                </div>    
             </div>
-          </div>
         </div>
-      </form>
-    </div>
-    <!-- Result -->
-    <div class="panel panel-primary hidden" id="result">
-      <div class="panel-body text-center">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="h3 text-success">現在の天気</div>
-            <div class="h3">
-              <img src="" id="icon">
-              <span id="temp"></span>
-              ℃
+        <!-- Result -->
+        <div class="row text-center panel panel-primary hidden" id="result">
+            <div class="col-md-12">
+                <div class="h1"><span id="city_title"></span></div>
             </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h4 text-danger">最高気温</div>
-            <div class="h4"><span id="temp-max"></span>℃</div>
-          </div>
-          <div class="col-sm-6">
-            <div class="h4 text-primary">最低気温</div>
-            <div class="h4"><span id="temp-min"></span>℃</div>
-          </div>
+            <div class="col-md-12">
+                <img id="icon">
+                <span class="h1" id="temp"></span>
+            </div>
+            <div class="col-sm-6">
+                <span class="h1" id="max_temp"></span>
+            </div>
+            <div class="col-sm-6">
+                <span class="h1" id="min_temp"></span>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- Error -->
-    <div class="panel panel-danger hidden" id="error">
-      <div class="panel-heading">該当する住所が見つかりません</div>
-      <div class="panel-body" id="error-message"></div>
-    </div>
-  </div>
-
-  <!-- Javascript -->
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/script.js"></script>
+        <!-- Error -->
+        <div class="row text-center panel panel-primary hidden" id="error">
+            <div class="col-md-12">
+                <div class="h1"><span id="error"></span></div>
+            </div>
+        </div>
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
