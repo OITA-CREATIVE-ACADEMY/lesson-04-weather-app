@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 10px solid #74c1ff;
+}
+
+h1 {
+  margin: 50px 0;
+  color: #74c1ff;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #74c1ff;
+  text-align: left;
+}
+
+h2::before {
+  content: "◆";
+  color: #74c1ff;
+  margin-right: 15px;
+}
+
+.contain {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#zipcode {
+  width: 600px;
+  padding: 14px;
+  font-size: 24px;
+  border: 1px solid #74c1ff;
+  border-radius: 4px;
+}
+
+#searchButton {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #74c1ff;
+  border: 1px solid #74c1ff;
+  border-radius: 4px;
+  color: #fff;
+}
+
+#searchButton:hover {
+  color: #fff;
+  background-color: #333;
+  border-color: #333;
+}
+
+.weather {
+  padding: 40px;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.resultNowTemp {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.resultMaxTemp {
+  color: #f765e0;
+}
+
+.resultMinTemp {
+  color: #54bdf1;
+}
+
+.resultIcon,
+.resultNowTemp {
+  display: inline-block;
+}
+
+.resultError {
+  color: #f765e0;
+}
+
+.resultIcon img {
+  width: 80px;
+  height: auto;
+  margin-bottom: -25px;
+  overflow: hidden;
+}
+
+.weeklyWeather {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.weeklyWeather ul {
+  display: flex;
+  justify-content: center;
+}
+
+.weeklyWeather ul li {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-right: 1px dashed #ccc;
+}
+
+.weeklyWeather ul li:first-child {
+  border-left: 1px dashed #ccc;
+}
+
+.weeklyWeather ul li img {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.weeklyDays {
+  display: block;
+}
+
+.weeklyTemp {
+  font-weight: bold;
+}
