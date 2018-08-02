@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 50%;
+  margin: 20px auto 0;
+}
+.top {
+  height: 50px;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+}
+
+.search-box {
+  text-align: center;
+  line-height: 50px;
+}
+input {
+  width: 40%;
+  height: 20px;
+  border-radius: 5px;
+}
+button {
+  width: 10%;
+  height: 26px;
+  border-radius: 5px;
+}
+
+.information {
+  margin-top: 30px;
+}
+
+.first-info {
+  border: 1px solid #FF0000;
+  text-align: center;
+}
+.info {
+  font-weight: bold;
+}
+
+.second-info {
+  border: 1px solid #000080;
+}
+.second-info::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.current-temp {
+  text-align: center;
+}
+.current-temp p {
+  font-size: 2.3rem;
+  color: #008000;
+  margin-bottom: 10px;
+}
+#temperature {
+  vertical-align: 20px;
+  font-weight: bold;
+}
+.max-min p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.max {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.max p {
+  color: #DD0000;
+}
+.min {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.min p {
+  color: #000080;
+}
+#max-temp, #min-temp {
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .max {
+    float: left;
+    padding-left: 15%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .min {
+    float: right;
+    padding-right: 15%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+  input {
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+  }
+  button {
+    width: 30%;
+    height: 26px;
+    border-radius: 5px;
+  }
+}
