@@ -6,7 +6,7 @@ $(function(){
 		// document.getElementById("content").style.display ="none"
         $("#content").hide();
         $("#fail").hide();
-        
+
 		function button(){
 			var input = document.getElementById("content");
 		if(input.style.display=="block"){
@@ -78,6 +78,7 @@ $(function(){
           console.log(results.responseJSON);
           $("#content").hide();
           $("#fail").show();
+          　alert('表示できません　郵便番号が正しくありません')
         });
   })
 
