@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;;
+}
+body {
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+  letter-spacing: .1em;
+}
+img {
+  vertical-align: text-bottom;;
+}
+form {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.zipcode, #button {
+  border: 1px solid #333;
+  border-radius: 2px;
+  float: left;
+  height: 40px;
+}
+.zipcode:focus, #button:focus {
+  outline: none;
+}
+.zipcode {
+  margin-right: 10px;
+  padding: 0 8px;
+  width: 120px;
+}
+#button {
+  cursor: pointer;
+  letter-spacing: .2em;
+  width: 60px;
+}
+.icon {
+  float: left;
+  margin: 0;
+}
+.temp {
+  margin-left: 70px;
+}
+.average {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+.max, .min {
+  font-weight: bold;
+  margin: 0;
+}
+.max {
+  margin-bottom: 10px;
+}
+.not-found {
+  font-size: 20px;
+  font-weight: bold;;
+}
