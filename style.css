@@ -1,0 +1,65 @@
+body {
+  background-color: #CCFFFF;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 20px;
+  display: inline-block;
+  line-height: normal;
+}
+
+input {
+  width: 60%;
+  height: 20px;
+  border: solid 1px black;
+}
+
+button {
+  width: 50px;
+  height: 25px;
+  border: solid 1px black;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.main-lapper {
+  padding: 10px 50px;
+}
+
+.sub-lapper {
+  padding: 0px 50px;
+  line-height: 0.5px;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+.max {
+  color: red;
+}
+
+.min {
+  color: blue;
+}
+
+h5 {
+  margin: 20px;
+  padding: 20px;
+  border: 2px dashed #8c8b8b;
+  display: none;
+}
+
+.error-message-2 {
+  color: red;
+}
