@@ -67,20 +67,15 @@
           °C
           </h3>
 
-
-        <p class="weather-widget-cloudiness">現在の天気</p>
-        </br>
-
-        <p class="main.temp_max">最高気温</p>
-
-          ℃
-
+       <div class="weather-widget-cloudiness">現在の天気</div>
+       </div>
       </div>
-    </br>
-        <p class="main.temp_min">最低気温</p>　
+        <div class="main.temp_max" ><id>最高気温</div>
+           ℃
+      </div>
 
+        <div class="main.temp_min"><id>最低気温</div>　
           ℃
-
       </div>
                    </div>
              </tbody>
@@ -88,7 +83,13 @@
          </div>
        </span>
      </div>
-     <body>
+     //<！ -エラー- >
+        <div  class = " panel panel-danger hidden"  id = "error">
+          <div  class = " panel-heading ">該当する住所が見つからない場合</div>
+          <div  class = " panel-body "  id = "エラーメッセージ" ></div>
+        </div>
+      </div>
+
 
 
 
@@ -100,4 +101,5 @@
     <script type="text/javascript"></script>
     <script src="script.js"></script>
   </body>
+
 </html>

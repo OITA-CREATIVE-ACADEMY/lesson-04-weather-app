@@ -14,7 +14,7 @@ $(function () {
   function ajaxRequest (url) {
     $.ajax({
       url: url,
-      type:"GET",
+      type:'GET'
       cache: false,
       timeout:10000,
     })
@@ -24,9 +24,25 @@ $(function () {
           console.log(data);
           console.log(data.main);
           console.log(data.main.temp);
-          console.log(data['main']['temp']['temp_min']['temp_max']);
-          //console.log(data['main']['temp_min']['temp_max']);
-}
+      dataType "text"
+  　　});
+
+  　   var temp_max = results.main.temp_max;
+       　　console.log(temp_max);
+
+       $(".max").text("最高気温" + temp_max + "℃");
+
+       var temp_min = results.main.temp_min;
+       　　console.log(temp_min);
+       $(".min").text("最低気温" + temp_min + "℃");
+
+       $(fanction(){
+      var event={
+        'click',
+      };
+      //   <div id="target">
+        $("#target").on(events.join(''),function(e){
+　　　});
 
 
     .fail(function(error) {
