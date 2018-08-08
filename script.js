@@ -27,11 +27,12 @@ $(window).on('load', function () {
     /* 獲得成功*/
     }).done(function(results) {
       console.log(results);
+      // 都市名取得する
       let city_name = results.name;
-      $('#city_title').text(`現在の${city_name}の気温は`); 
+      $('#city_title').text(`現在の${city_name}の気温は`);
       $('#temp').text(results.main.temp+"℃");
       //天気アイコンのurlを取得する
-      let icon_url = ICON_URL + results.weather[0].icon + ".png"; 
+      let icon_url = ICON_URL + results.weather[0].icon + ".png";
       $('#icon').attr({
           src: icon_url
         });
