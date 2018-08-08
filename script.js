@@ -1,8 +1,3 @@
-// ========================================================================
-
-// weather_API
-
-// ========================================================================
 
 $(function () {
 
@@ -40,17 +35,17 @@ $("#alert-message").hide();
     function ajaxRequst(url) {
       console.log('ajaxにURLを渡しました');
 
-      　 //ajaxに有効なURLが渡ったらdone以下の処理、それ以外はfail以下の処理 
+      　 //ajaxに有効なURLが渡ったらdone以下の処理、それ以外はfail以下の処理
       $.ajax({
         url: url,
         cache: false
 
-        　 //doneの処理 
+        　 //doneの処理
       }).done(function (results) {
         console.log("results=======")
         console.log(results);
 
-        // doneの時、お天気情報は表示して、エラーメッセージは隠す 
+        // doneの時、お天気情報は表示して、エラーメッセージは隠す
         $('#weather-info').show();
         $('#alert-message').hide();
 
