@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
    <title>WeatherApp</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,13 +12,14 @@
    <div id="input-address" class="box1">
     <p>郵便番号を入力するとお天気情報を見ることができます</p>
     <form id="form01" action="#">
-　　<input id="input"　type="text" placeholder="郵便番号を入力"　autofocus>
+　　<input id="input"　type="text" placeholder="郵便番号を入力"　name="zip11" class="form_text" onkeyup="AjaxZip3.zip2addr(this,'','addr11','addr11');"　autofocus>
     <input id="button" type="submit" value="検索">
     </form>
    </div>
 
 <!-- 現在の天気と気温-->
 <div id="content" class="box2">
+    <input id="address" type="text" name="addr11" class="form_text" >
     <h3 id="now">現在の天気</P>
     <div id="icon"></div>
     <span id="answer-temp"></span>℃
